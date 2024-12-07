@@ -1,0 +1,8 @@
+<div class="card-panel blue lighten-2">
+    <div class="row">
+      <app-safnaj [id]="item" (removeSafnaj)="removeSafnaj($event)" *ngFor="let item of enemies">
+      </app-safnaj>
+    </div>
+    <app-character name="chamod rajapaksha" (removeSafnaj)="removeSafnaj($event)"   style="background-color:lightblue;display:block"></app-character>
+    <app-character name="suresh rajapaksha" (removeSafnaj)="removeSafnaj($event)"   style="background-color:lightgreen;display:block"></app-character>
+  </div>

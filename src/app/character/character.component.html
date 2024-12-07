@@ -1,0 +1,9 @@
+<ul class="collection"> 
+    <li   class="collection-item avatar">   
+      <img *ngIf="name == 'suresh rajapaksha'" src="assets/mario.png" alt="" class="circle">
+      <img *ngIf="name == 'chamod rajapaksha'" src="assets/luigi.png" alt="" class="circle">
+      <span class="title">it is me! {{name}}, votes: {{votes}}</span>   
+    </li>
+  </ul>
+  <input type="number" #goombaId/>
+  <button class="btn waves-effect waves-light green accent-3" (click)="crushSafnaj(goombaId.value)">Jump over</button>
